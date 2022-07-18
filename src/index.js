@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import Onama from "./components/Onama";
 import Dashboard from "./components/Dashboard";
+import KlasnaKomponenta from "./components/KlasnaKomponenta";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -15,6 +16,10 @@ root.render(
         <Route path='/' element={<App />}>
           <Route index element={<Dashboard />} />
           <Route path='o-nama' element={<Onama />} />
+          <Route
+            path='klasna-komponenta'
+            element={<KlasnaKomponenta propi='Isprobavamo' />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>

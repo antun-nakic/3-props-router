@@ -7,7 +7,8 @@ function App() {
     <div className='App'>
       <header>
         <Link to='/'>Pocetna stranica</Link> | {""}
-        <Link to='o-nama'>O nama</Link>
+        <Link to='o-nama'>O nama</Link> | {""}
+        <Link to='klasna-komponenta'>Klasna komponenta</Link>
       </header>
       <Outlet />
       <footer>
